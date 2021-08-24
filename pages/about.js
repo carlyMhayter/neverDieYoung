@@ -20,14 +20,14 @@ const Home = () => (
         <div className="text-tile bio-text-tile inner-tile">
           <img src="/scroll.png" width="300px" height="30px" id="scroll-1" />
           <p className="text-tile-text-minor bio-text">
-            Walking Man was born from two musicians great respect for one
+            Never Die Young was born from two musicians great respect for one
             another and their longing to continue to perform in venues across
             the US. Having been influenced by the legendary style of James
             Taylor it made even more sense to create a project that paid
-            ultimate respect to his music. Walking Man will take you down that
-            Country Road James Taylor wrote about so many years ago and into his
-            living room with songs like the Secret of Life. A truly heartfelt
-            and authentic interpretation of the music of James Taylor.
+            ultimate respect to his music. Never Die Young will take you down
+            that Country Road James Taylor wrote about so many years ago and
+            into his living room with songs like the Secret of Life. A truly
+            heartfelt and authentic interpretation of the music of James Taylor.
           </p>
           <img src="/scroll.png" width="300px" height="30px" />
         </div>
@@ -65,7 +65,7 @@ const Home = () => (
           <p className="member-info"> Bass guitar, back-up vocals</p>
 
           <p className="text-tile-text-minor bio-text">
-            Well known local San Diego musician joins Walking Man on bass
+            Well known local San Diego musician joins Never Die Young on bass
             guitar.
           </p>
         </div>
@@ -80,7 +80,7 @@ const Home = () => (
 
           <p className="text-tile-text-minor bio-text">
             A San Diego native also well known in the SD music scene, Al Cacas
-            performs drums in Walking Man.
+            performs drums in Never Die Young.
           </p>
         </div>
       </div>
@@ -90,8 +90,8 @@ const Home = () => (
           <p className="text-tile-text-emp bio-name">Kylea Sheils</p>
           <p className="member-info"> Main and back-up vocals</p>
           <p className="text-tile-text-minor bio-text">
-            Life-long vocalist adds her wonderful vocals to the sound of Walking
-            Man.
+            Life-long vocalist adds her wonderful vocals to the sound of Never
+            Die Young.
           </p>
         </div>
         <div id="kylie" className="img-tile inner-til artist-img" />

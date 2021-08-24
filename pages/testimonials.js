@@ -12,8 +12,8 @@ const Home = () => (
               <div className="testimonial-person" id="unknown"></div>
             </div>
             <div className="text-tile-text-emp testimonial-text testimonial-text">
-              “The Walking Man Tribute is an absolute pleasure to witness.
-              Musical Mastery of some of America’s finest songs.”
+              “The Never Die Young is an absolute pleasure to witness. Musical
+              Mastery of some of America’s finest songs.”
               <p className="text-tile-text-minor testimonial-text">
                 - Damian DeRobbio, Belly Up Tavern, Solana Beach, California
               </p>
@@ -41,13 +41,13 @@ const Home = () => (
               <div className="testimonial-person" id="unknown"></div>
             </div>
             <div className="text-tile-text-emp testimonial-text">
-              "You have got to see Walking Man (the San Diego based James Taylor
-              tribute band). Their performance at the Belly Up in May 2019 was
-              stunningly good. This simply amazing band covers the folk-rock
-              songs from Taylor’s impactful 50 year career that are both gentle
-              & sweet as well as uplifting. If you want to see a great show that
-              will trigger your most beautiful and emotional nostalgic memories,
-              do not miss Walking Man!"
+              "You have got to see Never Die Young (the San Diego based James
+              Taylor tribute band). Their performance at the Belly Up in May
+              2019 was stunningly good. This simply amazing band covers the
+              folk-rock songs from Taylor’s impactful 50 year career that are
+              both gentle & sweet as well as uplifting. If you want to see a
+              great show that will trigger your most beautiful and emotional
+              nostalgic memories, do not miss Never Die Young!"
               <p className="text-tile-text-minor testimonial-text">
                 - Raffi Simonian
               </p>
