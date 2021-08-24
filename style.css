@@ -240,6 +240,9 @@ body {
   transform: rotate(180deg);
 }
 
+.scroll-img {
+  height: 40px;
+}
 .songtitles {
   font-family: Crushed, serif;
   color: rgb(214, 195, 176);

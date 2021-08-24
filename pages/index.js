@@ -41,8 +41,7 @@ const Home = () => {
                 Professional music by professional musicians. Cali grown.
               </p>
               <p className="text-tile-text-minor">
-                Learn more about the group of lifetime musicians behind Walking
-                Men:
+                Learn more about the group of lifetime musicians behind Never Die Young:
               </p>
               <Button onClick={() => router.push("/about")}>- About - </Button>
             </div>
@@ -58,7 +57,7 @@ const Home = () => {
                 Perfect for your event, both business and personal.
               </p>
               <p className="text-tile-text-minor">
-                Hear what satisfied clients have to say about Walking Man
+                Hear what satisfied clients have to say about Never Die Young
               </p>
               <Button onClick={() => router.push("/testimonials")}>
                 - Testimonials -

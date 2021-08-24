@@ -66,7 +66,7 @@ const NavBar = () => {
               <a>
                 <img
                   className="logo-image"
-                  src="./image_reduced_color2.png"
+                  src="./never-die-young-logo-small-expanded.svg"
                 ></img>
               </a>
             </Link>
@@ -75,7 +75,7 @@ const NavBar = () => {
           <div className="dropdown">
             <img
               className="dropDown-btn"
-              src="/dropdown-btn_gold.png"
+              src="/menu-bars.svg"
               onClick={showDropdown}
             />
             {isOpen && (
