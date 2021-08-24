@@ -7,15 +7,15 @@ const FormContact = () => {
       action="https://formspree.io/f/mvodqryp"
       method="POST"
     >
-      <label className="text-tile-text-emp" htmlFor="name">
+      <label className="text-tile-text-minor" htmlFor="name">
         <p>Name:</p>
         <input className="form-boxes small-box" name="name" />
       </label>
-      <label className="text-tile-text-emp" htmlFor="email">
+      <label className="text-tile-text-minor" htmlFor="email">
         <p>Email:</p>
         <input className="form-boxes small-box" name="email" />
       </label>
-      <label className="text-tile-text-emp" htmlFor="message">
+      <label className="text-tile-text-minor" htmlFor="message">
         Enter Message:
       </label>
       <textarea
