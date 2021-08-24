@@ -168,4 +168,9 @@
   #longDisplay {
     display: none;
   }
+
+  .scroll-img {
+    margin: 5px 0px 0px 0px;
+    height: 20px;
+  }
 }
