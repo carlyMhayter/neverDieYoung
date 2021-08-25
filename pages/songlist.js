@@ -1,4 +1,5 @@
 const songTitles = [
+  "Never Die Young",
   "Walking Man",
   "Carolina in My Mind",
   "Fire and Rain",
