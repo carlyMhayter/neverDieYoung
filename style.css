@@ -298,6 +298,28 @@ body {
   padding: 2px 0px;
 }
 
+.frontpage-ticket-link {
+  /* background-image: linear-gradient(
+    to right,
+    rgb(209, 141, 39),
+    rgb(245, 172, 62),
+    rgb(209, 141, 39)
+  ); */
+  background-color: rgba(255, 187, 0, 0.9);
+  width: 100%;
+  margin-top: 20px;
+  color: rgb(20, 20, 20);
+  font-size: 29px;
+  border-radius: 5px;
+  font-family: Crushed, sans-serif;
+  transition: 0.5s;
+  padding: 2px;
+}
+
+.frontpage-ticket-link:hover {
+  transform: translate(0px, 3px);
+  background-color: rgb(211, 143, 16);
+}
 /***********************************************************************
  *  Form
  **********************************************************************/

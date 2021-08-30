@@ -14,6 +14,9 @@ const Home = () => {
           <img className="cover-logo" src="/logo-full.svg" />
         </div>
         <div className="content">
+          <a href="/upcoming" className="frontpage-ticket-link">
+            - GET TICKETS -
+          </a>
           {/*Video Tile */}
           <div className="tile">
             <div className="" id="video-container">
@@ -34,14 +37,14 @@ const Home = () => {
               <Button onClick={() => router.push("/video")}>- Video -</Button>
             </div>
           </div>
-
           <div className="tile tile2">
             <div className="text-tile inner-tile">
               <p className="text-tile-text-emp">
                 Professional music by professional musicians. Cali grown.
               </p>
               <p className="text-tile-text-minor">
-                Learn more about the group of lifetime musicians behind Never Die Young:
+                Learn more about the group of lifetime musicians behind Never
+                Die Young:
               </p>
               <Button onClick={() => router.push("/about")}>- About - </Button>
             </div>

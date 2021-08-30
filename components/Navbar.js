@@ -55,7 +55,7 @@ const NavBar = () => {
         <div className="link-container navbar-links">
           <div id="longDisplay" className="text-links ">
             {Links.map((link) => (
-              <div className="navlink">
+              <div className="navlink" key={link.linkName}>
                 <Link href={link.linkLoc}>
                   <a> {link.linkName} </a>
                 </Link>
