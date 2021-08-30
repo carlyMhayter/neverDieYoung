@@ -262,6 +262,42 @@ body {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
+.upcoming-container {
+  border: 2px solid #e09200;
+  width: 400px;
+  padding: 30px 0px;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-button {
+  background-color: rgba(126, 93, 69, 0.9);
+  border-radius: 5px;
+  color: #e09200;
+  font-size: 30px;
+  margin: 0px 10px;
+}
+
+.upcoming-item {
+  font-family: Crushed, serif;
+  color: rgb(214, 195, 176);
+  padding: 2px;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(94, 54, 22, 0.5);
+  width: 300px;
+}
+
+.showtitle {
+  font-size: 25px;
+  color: rgb(230, 191, 119);
+}
+
+.upcoming-item-info {
+  padding: 2px 0px;
+}
+
 /***********************************************************************
  *  Form
  **********************************************************************/

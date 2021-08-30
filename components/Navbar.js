@@ -24,6 +24,7 @@ const Links = [
     linkName: "Contact",
     linkLoc: "/contact",
   },
+  { linkName: "Upcoming Shows", linkLoc: "/upcoming" },
 ];
 
 const NavBar = () => {
