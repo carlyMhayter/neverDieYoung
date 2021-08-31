@@ -11,7 +11,10 @@ const Home = () => {
     <>
       <div className="master-container">
         <div className="cover">
-          <img className="cover-logo" src="/logo-full.svg" />
+          <img
+            className="cover-logo"
+            src="/never-die-young-logo-final-NOBG-3-extra-wide-smallstroke.svg"
+          />
         </div>
         <div className="content">
           <a href="/upcoming" className="frontpage-ticket-link">
