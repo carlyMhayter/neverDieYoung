@@ -173,4 +173,7 @@
     margin: 5px 0px 0px 0px;
     height: 20px;
   }
+  .frontpage-ticket-link {
+    width: 350px;
+  }
 }
