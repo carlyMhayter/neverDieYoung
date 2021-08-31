@@ -8,7 +8,7 @@ const bandMembers = [
   },
   {
     name: "David Sheils",
-    title: "Lead Guitar, back-up vocals",
+    title: "Acoustic Guitar, vocals",
     photoID: "dave",
     bio: "Sheils has worked with wide variety of artists including Chicago, Toto, Mary Travers, Tower of Power, Billy Vera, Pat Benatar and written songs for Billy Preston and Freda Payne.",
     tileOrientation: "tile1  tile bio-tile",
@@ -22,7 +22,7 @@ const bandMembers = [
   },
   {
     name: "Al Cacas",
-    title: "Percussion, back-up vocals",
+    title: "Percussion, drums",
     photoID: "al",
     bio: "A San Diego native also well known in the SD music scene, Al Cacas performs drums in Never Die Young.",
     tileOrientation: "tile1  tile bio-tile",
