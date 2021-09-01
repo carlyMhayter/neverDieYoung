@@ -13,7 +13,7 @@ const Home = () => {
         <div className="cover">
           <img
             className="cover-logo"
-            src="/never-die-young-logo-lessOrnate.svg"
+            src="/never-die-young-logo-lessOrnate-oldFont.svg"
           />
         </div>
         <div className="content">

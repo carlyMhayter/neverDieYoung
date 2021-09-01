@@ -186,30 +186,30 @@ body {
 }
 
 #dave {
-  background-image: url("./public/dave_bw.jpg");
+  background-image: url("./public/dave_color.png");
 }
 
 #dave_tim {
-  background-image: url("./public/dave_tim_bw\ \(1\).jpg");
+  background-image: url("./public/timDave_color.png");
 }
 
 #dave_tim2 {
-  background-image: url("./public/dave_time2_bw.jpg");
+  background-image: url("./public/timDave_color.png");
 }
 
 #mike {
-  background-image: url("./public/Mike_bw.jpg");
+  background-image: url("./public/mike_color.png");
 }
 
 #tim {
-  background-image: url("./public/Tim_bw.jpg");
+  background-image: url("./public/tim_color.png");
 }
 #al {
-  background-image: url("./public/Al_bw.jpg");
+  background-image: url("./public/al_color.png");
 }
 
 #kylie {
-  background-image: url("./public/Kylie_bw.jpg");
+  background-image: url("./public/kylie-color.png");
 }
 /***********************************************************************
  *  Page Details
@@ -316,6 +316,7 @@ body {
   font-family: Crushed, sans-serif;
   transition: 0.5s;
   padding: 2px;
+  box-shadow: 0px 2px 0px 2px rgb(88, 54, 26);
 }
 
 .frontpage-ticket-link:hover {
