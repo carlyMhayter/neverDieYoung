@@ -1,4 +1,4 @@
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 975px) {
   html {
     min-width: 400px;
   }
@@ -175,5 +175,9 @@
   }
   .frontpage-ticket-link {
     width: 350px;
+  }
+
+  html {
+    background-image: none;
   }
 }
