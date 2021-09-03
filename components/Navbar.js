@@ -67,7 +67,7 @@ const NavBar = () => {
               <a>
                 <img
                   className="logo-image"
-                  src="./never-die-young-logo-small-expanded.svg"
+                  src="./never-die-young-logo-mini3.svg"
                 ></img>
               </a>
             </Link>
