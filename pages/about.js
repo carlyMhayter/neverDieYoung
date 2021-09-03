@@ -29,9 +29,9 @@ const bandMembers = [
   },
   {
     name: "Kylea Sheils",
-    title: "Main and back-up vocals",
+    title: "Vocals",
     photoID: "kylie",
-    bio: "Life-long vocalist adds her wonderful vocals to the sound of Never Die Young.",
+    bio: "San Diego based singer/songwriter who has worked with Chicago, John Rayond and other notable artists.",
     tileOrientation: "tile2 tile bio-tile",
   },
 ];

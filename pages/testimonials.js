@@ -2,7 +2,7 @@ import Carousel from "../components/Carousel";
 const testimonials = [
   {
     name: "Danny Reyes/Percussionist, Zach Brown Band",
-    text: " The music of James Taylor presented with authenticity and musical brilliance. I’m a big fan!",
+    text: "The music of James Taylor presented with authenticity and musical brilliance. I’m a big fan! ",
   },
   {
     name: "John Raymond/Guitarist, Kenny G",
@@ -10,7 +10,7 @@ const testimonials = [
   },
   {
     name: "Damian DeRobbio, Belly Up Tavern, Solana Beach, California",
-    text: "The Walking Man Tribute is an absolute pleasure to witness. Musical Mastery of some of America’s finest songs.",
+    text: "Never Die Young is an absolute pleasure to witness. Musical Mastery of some of America’s finest songs.",
   },
   {
     name: "Greg Howard, CEO, Carecraft",
