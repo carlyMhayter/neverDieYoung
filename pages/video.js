@@ -1,4 +1,4 @@
-import ReactPlayer from "react-player/youtube";
+import ReactPlayer from "react-player/vimeo";
 import React from "react";
 
 const Home = () => (
@@ -8,7 +8,7 @@ const Home = () => (
       <div className="tile">
         <div className="" id="video-container">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=lx1kwFJaZXs"
+            url="https://vimeo.com/637112988"
             width="100%"
             height="100%"
           />
