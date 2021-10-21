@@ -1,14 +1,14 @@
 const bandMembers = [
   {
     name: "Tim Godwin",
-    title: "Vocalist, Guitarist",
+    title: "Vocals, Guitar",
     photoID: "tim",
     bio: "Godwin has worked with such notable artists as Air Supply, Laura Brannigan, Shelby Lynne, Farmer, Tanya Tucker and been involved innumerous television projects and studio house bands.",
     tileOrientation: "tile2  tile bio-tile",
   },
   {
     name: "David Sheils",
-    title: "Acoustic Guitar, vocals",
+    title: "Guitar, vocals",
     photoID: "dave",
     bio: "Sheils has worked with wide variety of artists including Chicago, Toto, Mary Travers, Tower of Power, Billy Vera, Pat Benatar and written songs for Billy Preston and Freda Payne.",
     tileOrientation: "tile1  tile bio-tile",
@@ -22,7 +22,7 @@ const bandMembers = [
   },
   {
     name: "Al Cacas",
-    title: "Percussion, drums",
+    title: "Drums, percussion",
     photoID: "al",
     bio: "A San Diego native also well known in the SD music scene, Al Cacas performs drums in Never Die Young.",
     tileOrientation: "tile1  tile bio-tile",

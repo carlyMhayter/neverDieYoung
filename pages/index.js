@@ -20,6 +20,15 @@ const Home = () => {
           <a href="/upcoming" className="frontpage-ticket-link">
             - GET TICKETS -
           </a>
+
+          <div className="tile tile1">
+            <div id="dave_tim2" className="img-tile inner-tile" />
+            <div className="text-tile inner-tile">
+              <p className="text-tile-text-emp">
+                The premier James Taylor tribute band in Southern California.
+              </p>
+            </div>
+          </div>
           {/*Video Tile */}
           <div className="tile">
             <div className="" id="video-container">
@@ -27,19 +36,18 @@ const Home = () => {
                 url="https://vimeo.com/637112988"
                 width="100%"
                 height="100%"
+                config={{
+                  vimeo: {
+                    playerOptions: {
+                      title: true,
+                      color: "ffbf60",
+                    },
+                  },
+                }}
               />
             </div>
           </div>
-          <div className="tile tile1">
-            <div id="dave_tim2" className="img-tile inner-tile" />
-            <div className="text-tile inner-tile">
-              <p className="text-tile-text-emp">
-                The premier James Taylor tribute band in Southern California.
-              </p>
-              <p className="text-tile-text-minor">Hear their sound:</p>
-              <Button onClick={() => router.push("/video")}>- Video -</Button>
-            </div>
-          </div>
+
           <div className="tile tile2">
             <div className="text-tile inner-tile">
               <p className="text-tile-text-emp">

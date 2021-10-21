@@ -23,7 +23,11 @@ const Home = () => (
             <div className="upcoming-item-info"> {upcomingDate.showDate} </div>
             <div className="upcoming-item-info"> {upcomingDate.showTime} </div>
             <div className="upcoming-item-info"> {upcomingDate.location} </div>
-            <a href={upcomingDate.ticketLink} className="ticket-button">
+            <a
+              href={upcomingDate.ticketLink}
+              target="_blank"
+              className="ticket-button"
+            >
               Tickets
             </a>
           </div>

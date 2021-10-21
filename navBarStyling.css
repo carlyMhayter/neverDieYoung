@@ -26,6 +26,7 @@ a {
   color: rgb(195 169 141);
   padding: 0px 8px;
   transition: 0.5s;
+  text-align: center;
   border-top: 2px solid rgb(0, 0, 0);
   border-bottom: 2px solid rgb(0, 0, 0);
 }
