@@ -1,14 +1,14 @@
 const bandMembers = [
   {
     name: "Tim Godwin",
-    title: "Vocals, Guitar",
+    title: "Guitar, Vocals",
     photoID: "tim",
-    bio: "Godwin has worked with such notable artists as Air Supply, Laura Brannigan, Shelby Lynne, Farmer, Tanya Tucker and been involved innumerous television projects and studio house bands.",
+    bio: "Godwin has worked with such notable artists as Air Supply, Laura Brannigan, Shelby Lynne, Tanya Tucker in the house band for Fox’s Sunday Comics as well as numerous TV and Movie projects.",
     tileOrientation: "tile2  tile bio-tile",
   },
   {
     name: "David Sheils",
-    title: "Guitar, vocals",
+    title: "Vocals, Guitar",
     photoID: "dave",
     bio: "Sheils has worked with wide variety of artists including Chicago, Toto, Mary Travers, Tower of Power, Billy Vera, Pat Benatar and written songs for Billy Preston and Freda Payne.",
     tileOrientation: "tile1  tile bio-tile",

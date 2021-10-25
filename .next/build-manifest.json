@@ -44,20 +44,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/songlist.js"
     ],
-    "/testimonials": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/testimonials.js"
-    ],
     "/upcoming": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/upcoming.js"
-    ],
-    "/video": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/video.js"
     ]
   },
   "ampFirstPages": []

@@ -2,11 +2,9 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/video": "pages/video.js",
   "/": "pages/index.js",
-  "/contact": "pages/contact.js",
-  "/upcoming": "pages/upcoming.js",
-  "/testimonials": "pages/testimonials.js",
   "/songlist": "pages/songlist.js",
-  "/about": "pages/about.js"
+  "/contact": "pages/contact.js",
+  "/about": "pages/about.js",
+  "/upcoming": "pages/upcoming.js"
 }

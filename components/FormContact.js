@@ -23,7 +23,7 @@ const FormContact = () => {
         rows={10}
         name="message"
         id="message"
-        defaultValue={"Enter message here."}
+        defaultValue={" "}
       ></textarea>
       <button type="submit" className="button">
         - Submit -

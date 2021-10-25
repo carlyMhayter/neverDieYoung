@@ -7,7 +7,7 @@
   padding: 0px;
 }
 html {
-  background: url("/fender.jpg") no-repeat center left fixed;
+  background: url("/left2.jpg") no-repeat center left fixed;
   background-size: contain;
   background-color: black;
 }
@@ -19,7 +19,7 @@ body {
   width: 100%;
   font-size: 22px;
   font-family: Playfair Display, serif;
-  background: url("/dark-guitar.png") no-repeat center right fixed;
+  background: url("/right2.jpg") no-repeat center right fixed;
   background-size: contain;
 }
 
@@ -217,9 +217,9 @@ body {
 .page-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
 }
 
 .page-title {
