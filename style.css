@@ -19,7 +19,7 @@ body {
   width: 100%;
   font-size: 22px;
   font-family: Playfair Display, serif;
-  background: url("/right2.jpg") no-repeat center right fixed;
+  background: url("/right2-trans.png") no-repeat center right fixed;
   background-size: contain;
 }
 
