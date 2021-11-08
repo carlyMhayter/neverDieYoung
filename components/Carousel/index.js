@@ -29,6 +29,7 @@ export default function Carousel({ children, width, unit }) {
         >
           {items.map((item) => (
             <div
+              key={item}
               className={styles.item}
               style={{
                 width: `${width}${unit}`,

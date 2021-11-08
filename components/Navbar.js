@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import React from "react";
 
-const Links = [
+const links = [
   { linkName: "Home", linkLoc: "/" },
   {
     linkName: "About",
@@ -50,50 +50,48 @@ const NavBar = () => {
   }, [isOpen]);
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="link-container navbar-links">
-          <div id="longDisplay" className="text-links ">
-            {Links.map((link) => (
-              <div className="navlink" key={link.linkName}>
-                <Link href={link.linkLoc}>
-                  <a> {link.linkName} </a>
-                </Link>
-              </div>
-            ))}
-          </div>
-          <div className="navlink img-link">
-            <Link href="/">
-              <a>
-                <img
-                  className="logo-image"
-                  src="./never-die-young-logo-mini3.svg"
-                ></img>
-              </a>
-            </Link>
-          </div>
-
-          <div className="dropdown">
-            <img
-              className="dropDown-btn"
-              src="/menu-bars.svg"
-              onClick={showDropdown}
-            />
-            {isOpen && (
-              <div id="myDropdown" className="text-links dropdown-content">
-                {Links.map((link) => (
-                  <div className="navlink">
-                    <Link href={link.linkLoc}>
-                      <a> {link.linkName} </a>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+    <nav className="navbar">
+      <div className="link-container navbar-links">
+        <div id="longDisplay" className="text-links ">
+          {links.map((link) => (
+            <div className="navlink" key={link.linkName}>
+              <Link href={link.linkLoc}>
+                <a> {link.linkName} </a>
+              </Link>
+            </div>
+          ))}
         </div>
-      </nav>
-    </>
+        <div className="navlink img-link">
+          <Link href="/">
+            <a>
+              <img
+                className="logo-image"
+                src="./never-die-young-logo-mini3.svg"
+              />
+            </a>
+          </Link>
+        </div>
+
+        <div className="dropdown">
+          <img
+            className="dropDown-btn"
+            src="/menu-bars.svg"
+            onClick={showDropdown}
+          />
+          {isOpen && (
+            <div id="myDropdown" className="text-links dropdown-content">
+              {links.map((link) => (
+                <div className="navlink" key={link.linkName}>
+                  <Link href={link.linkLoc}>
+                    <a> {link.linkName} </a>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </nav>
   );
 };
 
