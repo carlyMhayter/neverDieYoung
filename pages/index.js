@@ -33,7 +33,7 @@ const Home = () => {
           <div className="tile">
             <div className="" id="video-container">
               <ReactPlayer
-                url="https://vimeo.com/643688095"
+                url="https://vimeo.com/637112988"
                 width="100%"
                 height="100%"
                 config={{
