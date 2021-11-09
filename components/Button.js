@@ -7,7 +7,7 @@ const Button = ({ onClick, children }) => (
     </button>
   </div>
 );
-button.propTypes = {
+Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   children: PropTypes.any.isRequired,
 };
