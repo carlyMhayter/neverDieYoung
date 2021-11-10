@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Button from "components/Button";
 import ReactPlayer from "react-player/vimeo";
 import React from "react";
+import Head from "next/head";
 
 const Home = () => {
   const router = useRouter();
@@ -10,6 +11,14 @@ const Home = () => {
   return (
     <>
       <div className="master-container">
+        <Head>
+          <title>Never Die Young - Home</title>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
         <div className="cover">
           <img
             className="cover-logo"

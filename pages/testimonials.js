@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Carousel from "../components/Carousel";
 const testimonials = [
   {
@@ -22,8 +24,13 @@ const testimonials = [
   },
 ];
 
-const Home = () => (
+const Testimonials = () => (
   <div className="page-content">
+    <Head>
+      <title>NDY - Testimonials</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <div className="page-title">Testimonials</div>
     <div className="content">
       <div className="tile testimonial-tile">
@@ -46,4 +53,4 @@ const Home = () => (
     </div>
   </div>
 );
-export default Home;
+export default Testimonials;

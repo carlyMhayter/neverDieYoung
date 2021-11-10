@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 const bandMembers = [
   {
     name: "Tim Godwin",
@@ -36,15 +38,20 @@ const bandMembers = [
   },
 ];
 
-const Home = () => (
+const About = () => (
   <div className="page-content">
-    <div className="page-title">About </div>
+    <Head>
+      <title>NDY - About</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+    <h1 className="page-title">About </h1>
     <div className="content">
       {/* Band info Tile Main */}
       <div className="tile tile1 bio-tile">
         <div className="img-tile inner-tile" id="dave_tim" />
         <div className="text-tile bio-text-tile inner-tile">
-          <p className="text-tile-text-emp bio-name">Meet the band</p>
+          <h2 className="text-tile-text-emp bio-name">Meet the band</h2>
           <img src="/ndy-scroll.svg" id="scroll-1" className="scroll-img" />
           <p className="text-tile-text-minor bio-text">
             For the last four decades David Sheils and Tim Godwin have been
@@ -76,7 +83,7 @@ const Home = () => (
         <div key={member.name} className={member.tileOrientation}>
           <div className="img-tile inner-tile" id={member.photoID} />
           <div className="text-tile bio-text-tile inner-tile">
-            <p className="text-tile-text-emp bio-name">{member.name}</p>
+            <h3 className="text-tile-text-emp bio-name">{member.name}</h3>
             <p className="member-info"> {member.title}</p>
             <img src="/ndy-scroll.svg" id="scroll-1" className="scroll-img" />
             <p className="text-tile-text-minor bio-text">{member.bio}</p>
@@ -86,4 +93,4 @@ const Home = () => (
     </div>
   </div>
 );
-export default Home;
+export default About;

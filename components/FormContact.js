@@ -8,11 +8,7 @@ const FormContact = () => (
   >
     <label for="name-input" className="text-tile-text-minor" htmlFor="name">
       <p>Name:</p>
-      <input
-        id="name-input"
-        nameImputclassName="form-boxes small-box"
-        name="name"
-      />
+      <input id="name-input" className="form-boxes small-box" name="name" />
     </label>
     <label for="email-input" className="text-tile-text-minor" htmlFor="email">
       <p>Email:</p>

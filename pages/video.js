@@ -1,8 +1,14 @@
 import ReactPlayer from "react-player/vimeo";
 import React from "react";
+import Head from "next/head";
 
-const Home = () => (
+const Video = () => (
   <div className="page-content">
+    <Head>
+      <title>NDY - Video</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <div className="page-title"> Video </div>
     <div className="content">
       <div className="tile">
@@ -25,4 +31,4 @@ const Home = () => (
     </div>
   </div>
 );
-export default Home;
+export default Video;

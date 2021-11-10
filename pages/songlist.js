@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 const songTitles = [
   "Never Die Young",
   "Walking Man",
@@ -28,18 +30,23 @@ const songTitles = [
   "Wichita Lineman",
 ];
 
-const Home = () => (
+const Songlist = () => (
   <div className="page-content">
+    <Head>
+      <title>NDY - Songlist</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <div className="page-title"> Song List </div>
     <div className="content">
-      <div className="songtitles-container">
+      <ul className="songtitles-container">
         {songTitles.map((title) => (
-          <ul className="songtitles" key={title}>
+          <li className="songtitles" key={title}>
             {title}
-          </ul>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   </div>
 );
-export default Home;
+export default Songlist;

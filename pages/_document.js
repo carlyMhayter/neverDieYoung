@@ -11,7 +11,7 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link rel="icon" href="/assets/img/favicon.svg" />
-          <title>Never Die Young</title>
+          {/* <title>Never Die Young</title> */}
         </Head>
         <body>
           <Main />

@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 const upcomingDates = [
   // {
   //   showTitle: "Walking Man Tribute: A Salute to James Taylor",
@@ -9,8 +11,13 @@ const upcomingDates = [
   // },
 ];
 
-const Home = () => (
+const UpcomingShows = () => (
   <div className="page-content">
+    <Head>
+      <title>NDY - Upcoming Shows</title>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <div className="page-title"> Upcoming Shows </div>
     <div className="content">
       <div className="upcoming-container">
@@ -36,4 +43,4 @@ const Home = () => (
     </div>
   </div>
 );
-export default Home;
+export default UpcomingShows;
