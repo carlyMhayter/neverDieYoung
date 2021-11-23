@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Button from "components/Button";
-import ReactPlayer from "react-player/vimeo";
+import ReactPlayer from "react-player/youtube";
 import React from "react";
 import Head from "next/head";
 
@@ -42,17 +42,9 @@ const Home = () => {
           <div className="tile">
             <div className="" id="video-container">
               <ReactPlayer
-                url="https://vimeo.com/643688095"
+                url="https://www.youtube.com/watch?v=VZ2oIhpo5Sg"
                 width="100%"
                 height="100%"
-                config={{
-                  vimeo: {
-                    playerOptions: {
-                      title: true,
-                      color: "ffbf60",
-                    },
-                  },
-                }}
               />
             </div>
           </div>

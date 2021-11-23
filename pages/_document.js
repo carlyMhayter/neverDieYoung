@@ -11,7 +11,11 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link rel="icon" href="/assets/img/favicon.svg" />
-          {/* <title>Never Die Young</title> */}
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
         </Head>
         <body>
           <Main />
