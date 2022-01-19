@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Card from "components/Card";
+import { aboutCardsInfo } from "utils/cardsData";
 
 const bandMembers = [
   {
@@ -45,49 +47,21 @@ const About = () => (
     </Head>
     <h1 className="page-title">About </h1>
     <div className="content">
-      {/* Band info Tile Main */}
-      <div className="tile tile1 bio-tile">
-        <div className="img-tile inner-tile" id="dave_tim" />
-        <div className="text-tile bio-text-tile inner-tile">
-          <h2 className="text-tile-text-emp bio-name">Meet the band</h2>
-          <img src="/ndy-scroll.svg" id="scroll-1" className="scroll-img" />
-          <p className="text-tile-text-minor bio-text">
-            For the last four decades David Sheils and Tim Godwin have been
-            writing and performing music worldwide. When they both ended up
-            making San Diego their home it seemed only right to put together
-            something very special.
-          </p>
-        </div>
-      </div>
-      {/* Band info Tile Minor */}
-      <div className="tile tile1 bio-tile">
-        <div className="text-tile bio-text-tile inner-tile">
-          <img src="/ndy-scroll.svg" className="scroll-img" />
-
-          <p className="text-tile-text-minor bio-text">
-            Never Die Young was born from two musicians great respect for one
-            another and their longing to continue to perform in venues across
-            the US. Having been influenced by the legendary style of James
-            Taylor it made even more sense to create a project that paid
-            ultimate respect to his music. Never Die Young will take you down
-            that Country Road James Taylor wrote about so many years ago and
-            into his living room with songs like the Secret of Life. A truly
-            heartfelt and authentic interpretation of the music of James Taylor.
-          </p>
-          <img src="/ndy-scroll.svg" id="scroll-1" className="scroll-img" />
-        </div>
-      </div>
-      {bandMembers.map((member) => (
-        <div key={member.name} className={member.tileOrientation}>
-          <div className="img-tile inner-tile" id={member.photoID} />
-          <div className="text-tile bio-text-tile inner-tile">
-            <h3 className="text-tile-text-emp bio-name">{member.name}</h3>
-            <p className="member-info"> {member.title}</p>
-            <img src="/ndy-scroll.svg" id="scroll-1" className="scroll-img" />
-            <p className="text-tile-text-minor bio-text">{member.bio}</p>
-          </div>
-        </div>
-      ))}
+      {Object.keys(aboutCardsInfo).map(function (card, index) {
+        return (
+          <Card
+            key={card}
+            orientation={aboutCardsInfo[card].orientation}
+            empText={aboutCardsInfo[card].empText}
+            minEmpText={aboutCardsInfo[card].minEmpText}
+            minorText={aboutCardsInfo[card].minorText}
+            buttonLinkname={aboutCardsInfo[card].buttonLinkname}
+            buttonText={aboutCardsInfo[card].buttonText}
+            imgId={aboutCardsInfo[card].imgId}
+            scroll={aboutCardsInfo[card].scroll}
+          />
+        );
+      })}
     </div>
   </div>
 );

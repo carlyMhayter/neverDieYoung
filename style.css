@@ -148,7 +148,7 @@ body {
 
 .tile2 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
 }
 .vertical-tile {
   display: flex;
