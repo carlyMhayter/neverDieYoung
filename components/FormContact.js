@@ -1,33 +1,27 @@
-import { useForm, ValidationError } from "@formspree/react";
-
 const FormContact = () => (
   <form
     className="form-contact"
     action="https://formspree.io/f/mvodqryp"
     method="POST"
   >
-    <label for="name-input" className="text-tile-text-minor" htmlFor="name">
+    <label htmlFor="name-input" className="text-tile-text-minor">
       <p>Name:</p>
       <input id="name-input" className="form-boxes small-box" name="name" />
     </label>
-    <label for="email-input" className="text-tile-text-minor" htmlFor="email">
+    <label htmlFor="email-input" className="text-tile-text-minor">
       <p>Email:</p>
       <input className="form-boxes small-box" name="email" id="email-input" />
     </label>
-    <label
-      for="message-input"
-      className="text-tile-text-minor"
-      htmlFor="message"
-    >
+    <label htmlFor="message-input" className="text-tile-text-minor">
       Enter Message:
+      <textarea
+        className="form-boxes"
+        rows={10}
+        name="message"
+        id="message-input"
+        defaultValue=" "
+      />
     </label>
-    <textarea
-      className="form-boxes"
-      rows={10}
-      name="message"
-      id="message-input"
-      defaultValue=" "
-    ></textarea>
     <button type="submit" className="button">
       - Submit -
     </button>

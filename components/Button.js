@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Button = ({ onClick, children }) => (
   <div>
-    <button className="button" onClick={onClick}>
+    <button className="button" onClick={onClick} type="button">
       {children}
     </button>
   </div>

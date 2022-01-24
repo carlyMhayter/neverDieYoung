@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styles from "./Carousel.module.scss";
-import useTransition from "./useTransition";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './Carousel.module.scss';
+import useTransition from './useTransition';
 
 export default function Carousel({ children, width, unit }) {
   // here we extracted the carousel functionality into its own hook
   const { translate, items, setAction } = useTransition(width, children);
 
-  const handleNext = () => setAction("next");
-  const handlePrev = () => setAction("prev");
-  const prevText = "< prev";
-  const nextText = "next >";
+  const handleNext = () => setAction('next');
+  const handlePrev = () => setAction('prev');
+  const prevText = '< prev';
+  const nextText = 'next >';
 
   return (
     <div
@@ -41,10 +41,18 @@ export default function Carousel({ children, width, unit }) {
         </div>
       </div>
       <div className={styles.controls}>
-        <button className={`${styles.next} button`} onClick={handleNext}>
+        <button
+          type="button"
+          className={`${styles.next} button`}
+          onClick={handleNext}
+        >
           {nextText}
         </button>
-        <button className={`${styles.prev} button`} onClick={handlePrev}>
+        <button
+          type="button"
+          className={`${styles.prev} button`}
+          onClick={handlePrev}
+        >
           {prevText}
         </button>
       </div>
@@ -63,5 +71,5 @@ Carousel.propTypes = {
 
 Carousel.defaultProps = {
   width: 350,
-  unit: "px",
+  unit: 'px',
 };

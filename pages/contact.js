@@ -1,5 +1,5 @@
-import FormContact from "../components/FormContact";
-import Head from "next/head";
+import FormContact from '../components/FormContact';
+import Head from 'next/head';
 
 const Contact = () => (
   <div className="page-content">

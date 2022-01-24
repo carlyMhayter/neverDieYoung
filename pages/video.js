@@ -1,6 +1,6 @@
-import ReactPlayer from "react-player/youtube";
-import React from "react";
-import Head from "next/head";
+import ReactPlayer from 'react-player/youtube';
+import React from 'react';
+import Head from 'next/head';
 
 const Video = () => (
   <div className="page-content">

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crushed&family=Galada&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crushed&family=Galada&display=swap');
 * {
   margin: 0px;
   padding: 0px;
 }
 html {
-  background: url("/left2.jpg") no-repeat center left fixed;
+  background: url('/left2.jpg') no-repeat center left fixed;
   background-size: contain;
   background-color: black;
 }
@@ -17,7 +17,7 @@ body {
   width: 100%;
   font-size: 22px;
   font-family: Playfair Display, serif;
-  background: url("/right2-trans2.png") no-repeat center right fixed;
+  background: url('/right2-trans2.png') no-repeat center right fixed;
   background-size: contain;
 }
 
@@ -173,43 +173,43 @@ body {
 
 #cali {
   /* background-image: url("https://images.unsplash.com/photo-1572977438018-16c62331cecb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"); */
-  background-image: url("./public/caliBeach.jpeg");
+  background-image: url('./public/caliBeach.jpeg');
 }
 
 #guitar-closeup {
   /* background-image: url("https://images.unsplash.com/photo-1605232433977-5b5d562812e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=678&q=80"); */
-  background-image: url("./public/guitarCloseup.jpeg");
+  background-image: url('./public/guitarCloseup.jpeg');
 }
 
 #group1 {
-  background-image: url("./public/Group_bw.jpg");
+  background-image: url('./public/Group_bw.jpg');
 }
 
 #dave {
-  background-image: url("./public/dave_color.png");
+  background-image: url('./public/dave_color.png');
 }
 
 #dave_tim {
-  background-image: url("./public/timDave_color.png");
+  background-image: url('./public/timDave_color.png');
 }
 
 #dave_tim2 {
-  background-image: url("./public/timDave_color.png");
+  background-image: url('./public/timDave_color.png');
 }
 
 #mike {
-  background-image: url("./public/mike_color.png");
+  background-image: url('./public/mike_color.png');
 }
 
 #tim {
-  background-image: url("./public/tim_color.png");
+  background-image: url('./public/tim_color.png');
 }
 #al {
-  background-image: url("./public/al_color.png");
+  background-image: url('./public/al_color.png');
 }
 
 #kylie {
-  background-image: url("./public/kylie-color.png");
+  background-image: url('./public/kylie-color.png');
 }
 /***********************************************************************
  *  Page Details
@@ -395,7 +395,7 @@ body {
 }
 
 #unknown {
-  background-image: url("./public/profile-pic.jpeg");
+  background-image: url('./public/profile-pic.jpeg');
   background-position: center;
   background-size: contain;
 }

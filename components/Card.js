@@ -1,5 +1,6 @@
-import React from "react";
-import Button from "components/Button";
+import React from 'react';
+import Button from 'components/Button';
+import { useRouter } from 'next/router';
 
 export default function Card(props) {
   const {
@@ -10,18 +11,27 @@ export default function Card(props) {
     buttonLinkName,
     buttonText,
     imgId,
+    imgAlt,
     scroll,
   } = { ...props };
+
+  const router = useRouter();
+
   return (
     <div className={`tile ${orientation}`}>
-      {orientation === "left" && (
+      {orientation === 'left' && (
         <div id={imgId} className="img-tile inner-tile" />
       )}
       <div className="text-tile inner-tile">
         <p className="text-tile-text-emp">{empText}</p>
         {minEmpText && <p className="member-info">{minEmpText}</p>}
         {scroll && (
-          <img src="/ndy-scroll.svg" id="scroll-1" className="scroll-img" />
+          <img
+            src="/ndy-scroll.svg"
+            id="scroll-1"
+            className="scroll-img"
+            alt=""
+          />
         )}
         <p className="text-tile-text-minor">{minorText}</p>
         {buttonText.length > 0 && (
@@ -30,8 +40,8 @@ export default function Card(props) {
           </Button>
         )}
       </div>
-      {orientation === "right" && (
-        <div id={imgId} className="img-tile inner-tile" />
+      {orientation === 'right' && (
+        <div id={imgId} className="img-tile inner-tile" alt={imgAlt} />
       )}
     </div>
   );

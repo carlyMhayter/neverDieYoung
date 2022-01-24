@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const upcomingDates = [
   // {
@@ -24,8 +24,8 @@ const UpcomingShows = () => (
         {upcomingDates.map((upcomingDate) => (
           <div className="upcoming-item" key={upcomingDate}>
             <div className="showtitle upcoming-item-info">
-              {" "}
-              {upcomingDate.showTitle}{" "}
+              {' '}
+              {upcomingDate.showTitle}{' '}
             </div>
             <div className="upcoming-item-info"> {upcomingDate.showDate} </div>
             <div className="upcoming-item-info"> {upcomingDate.showTime} </div>
