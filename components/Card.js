@@ -18,11 +18,11 @@ export default function Card(props) {
   const router = useRouter();
 
   return (
-    <div className={`tile ${orientation}`}>
+    <div className={`tile ${orientation} about-cards`}>
       {orientation === 'left' && (
-        <div id={imgId} className="img-tile inner-tile" />
+        <div id={imgId} className="img-tile inner-tile about-img-tile" />
       )}
-      <div className="text-tile inner-tile">
+      <div className="text-tile inner-tile about-text-tile">
         <p className="text-tile-text-emp">{empText}</p>
         {minEmpText && <p className="member-info">{minEmpText}</p>}
         {scroll && (
@@ -41,7 +41,11 @@ export default function Card(props) {
         )}
       </div>
       {orientation === 'right' && (
-        <div id={imgId} className="img-tile inner-tile" alt={imgAlt} />
+        <div
+          id={imgId}
+          className="img-tile inner-tile about-img-tile"
+          alt={imgAlt}
+        />
       )}
     </div>
   );

@@ -32,6 +32,8 @@
     flex-direction: column;
     align-items: center;
   }
+
+  /* Tiles ------------------------------------------ */
   .tile {
     flex-direction: column;
     position: relative;
@@ -94,6 +96,35 @@
     padding: 0px;
   }
 
+  .about-cards {
+    /* background-color: red;
+    color: red; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-tile {
+    margin-right: 0px;
+  }
+
+  .text-tile {
+    margin: 10px;
+  }
+  .tile:nth-child(odd) .text-tile {
+    margin: 10px;
+  }
+
+  .about-text-tile {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%);
+    width: auto;
+  }
+
+  /* Form --------------------------------------- */
   .form-contact {
     max-width: 350px;
     display: block;
@@ -104,6 +135,8 @@
     max-width: 350px;
     padding: 0px 0px 10px 0px;
   }
+
+  /* Testimonials --------------------------------- */
   .testimonial-container {
     display: flex;
     justify-content: center;
@@ -130,6 +163,8 @@
     height: 225px;
     width: 350px;
   }
+
+  /* Dropdown styling ---------------------------------- */
   .dropDown-btn {
     display: block;
     background-color: black;
@@ -152,7 +187,7 @@
     background-color: rgba(0, 0, 0, 0.85);
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 11;
     right: 15px;
     border: 2px solid rgba(122, 110, 100, 0.65);
   }

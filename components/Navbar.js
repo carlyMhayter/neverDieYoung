@@ -11,7 +11,7 @@ const NavBar = () => {
   useEffect(() => {
     document.addEventListener('click', (event) => {
       const target1 = event.target.className;
-      if (isOpen && target1 !== 'dropDown-btn') {
+      if (isOpen && target1 !== 'dropdown-menu-button-img') {
         setIsOpen(false);
       }
     });
@@ -46,6 +46,7 @@ const NavBar = () => {
         <div className="dropdown">
           <button
             type="button"
+            id="dropdown-menu-button"
             onClick={() => {
               setIsOpen(!isOpen);
             }}
@@ -55,7 +56,7 @@ const NavBar = () => {
           >
             <img
               alt="dropdown menu button"
-              className="dropDown-btn"
+              className="dropdown-menu-button-img"
               src="/menu-bars.svg"
             />
             {/* <MenuIcon fontSize="large" /> */}

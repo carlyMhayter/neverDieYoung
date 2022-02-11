@@ -104,7 +104,8 @@ export const aboutCardsInfo = {
     minorText:
       'Well known local San Diego musician joins Never Die Young on bass guitar.',
     buttonLinkname: '',
-    buttonText: 'man plays bass on stage',
+    buttonText: '',
+    imgAlt: 'man sings and plays guitar on stage',
     imgId: 'mike',
     scroll: true,
   },

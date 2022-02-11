@@ -70,17 +70,24 @@ a {
   right: calc(50% - 285px);
   top: 12px;
 }
-
-.dropDown-btn {
-  display: none;
+#dropdown-menu-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu-button-img {
+  /* display: none; */
   height: 30px;
   width: 70px;
   transition: 0.5s;
   filter: brightness(75%);
 }
 
-.dropDown-btn:hover {
+.dropdown-menu-button-img:hover {
   cursor: pointer;
   text-shadow: 2px 2px 10px #cfa351;
   filter: brightness(125%);
+}
+
+#myDropdown {
+  z-index: 10;
 }
