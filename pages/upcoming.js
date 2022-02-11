@@ -3,7 +3,7 @@ import Head from 'next/head';
 const upcomingDates = [
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
-    showDate: 'April 27 2022',
+    showDate: 'April 23 2022',
     showTime: 'Time is TBA',
     location: 'Arizona Charlies/Decatur, Las Vegas',
     ticketLink: 'Ticket link coming soon',
