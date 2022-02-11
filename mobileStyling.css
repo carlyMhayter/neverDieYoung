@@ -132,6 +132,9 @@
   }
   .dropDown-btn {
     display: block;
+    background-color: black;
+    border: none;
+    border-color: black;
   }
   .logo-image {
     display: block;

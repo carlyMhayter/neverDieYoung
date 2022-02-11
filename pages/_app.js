@@ -1,6 +1,7 @@
 import '../style.css';
 import '../navBarStyling.css';
 import '../mobileStyling.css';
+
 import NavBar from '../components/Navbar';
 import { PropTypes } from 'prop-types';
 

@@ -267,7 +267,9 @@ body {
 
 .upcoming-container {
   border: 2px solid #e09200;
-  width: 400px;
+  width: 350px;
+  height: auto;
+  flex-direction: column;
   padding: 30px 0px;
   background-color: rgba(0, 0, 0, 0.55);
   display: flex;
@@ -290,6 +292,7 @@ body {
   font-size: 20px;
   border-bottom: 2px solid rgba(94, 54, 22, 0.5);
   width: 300px;
+  margin-bottom: 15px;
 }
 
 .showtitle {

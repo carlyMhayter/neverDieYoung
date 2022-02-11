@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { links } from 'utils/linksData';
+// import { MenuIcon } from '@material-ui/icons';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +58,7 @@ const NavBar = () => {
               className="dropDown-btn"
               src="/menu-bars.svg"
             />
+            {/* <MenuIcon fontSize="large" /> */}
           </button>
 
           {/* show the dropdown menu options */}
