@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'components/Button';
 import { useRouter } from 'next/router';
+import styles from "styles/component-styles/Card.module.scss";
 
 export default function Card(props) {
   const {
@@ -18,22 +19,22 @@ export default function Card(props) {
   const router = useRouter();
 
   return (
-    <div className={`tile ${orientation} about-cards`}>
+    <div className={`${styles.tile} ${orientation} ${styles.aboutcards}`}>
       {orientation === 'left' && (
-        <div id={imgId} className="img-tile inner-tile about-img-tile" />
+        <div id={imgId} className={`${styles.img} ${styles.inner}`} />
       )}
-      <div className="text-tile inner-tile about-text-tile">
-        <p className="text-tile-text-emp">{empText}</p>
-        {minEmpText && <p className="member-info">{minEmpText}</p>}
+      <div className={`${styles.text} ${styles.inner} ${styles.abouttext}`} >
+        <p className={styles.textemp}>{empText}</p>
+        {minEmpText && <p className={styles.memberinfo}>{minEmpText}</p>}
         {scroll && (
           <img
             src="/ndy-scroll.svg"
             id="scroll-1"
-            className="scroll-img"
+            className={styles.scrollimg}
             alt=""
           />
         )}
-        <p className="text-tile-text-minor">{minorText}</p>
+        <p className={styles.textminor}>{minorText}</p>
         {buttonText.length > 0 && (
           <Button onClick={() => router.push({ buttonLinkName })}>
             - {buttonText}-
@@ -43,7 +44,7 @@ export default function Card(props) {
       {orientation === 'right' && (
         <div
           id={imgId}
-          className="img-tile inner-tile about-img-tile"
+          className={`${styles.img} ${styles.inner} `}
           alt={imgAlt}
         />
       )}

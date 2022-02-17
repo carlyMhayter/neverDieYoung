@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import styles from '../styles/component-styles/Button.module.scss';
 
 const Button = ({ onClick, children }) => (
   <div>
-    <button className="button" onClick={onClick} type="button">
+    <button className={styles.button} onClick={onClick} type="button">
       {children}
     </button>
   </div>

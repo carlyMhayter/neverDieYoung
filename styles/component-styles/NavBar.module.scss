@@ -1,0 +1,118 @@
+.navbar {
+  background: rgba(19, 19, 19, 0.75);
+  width: 100%;
+  position: relative;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+.navBarLinks {
+  font-family: Crushed, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: red;
+}
+.navlink {
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media only screen and (max-width: 975px) {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(195 169 141);
+    padding: 0px 8px;
+    transition: 0.5s;
+    text-align: center;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+}
+
+.imglink {
+  display: none;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+
+.textlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dropdown {
+  display: none;
+  @media only screen and (max-width: 975px) {
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+}
+
+.logoimage {
+  display: none;
+    @media only screen and (max-width: 975px) {
+      display:block;
+    }
+  width: 80px;
+}
+
+.dropdownBtn {
+  display: none;
+  @media only screen and (max-width: 975px) {
+    display: block;
+    background-color: black;
+    border: none;
+    border-color: black;
+  }
+}
+
+.dropdowncontent {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+  right: 15px;
+  border: 2px solid rgba(122, 110, 100, 0.65);
+  &:hover {
+    color: #e09200;
+    border-top: 2px solid rgb(94, 54, 22);
+    border-bottom: 2px solid rgb(94, 54, 22);
+  }
+}
+
+#myDropdown {
+  z-index: 10;
+}
+.menuimg {
+  height: 30px;
+  width: 70px;
+  transition: 0.5s;
+  filter: brightness(75%);
+
+  &hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 10px #cfa351;
+    filter: brightness(125%);
+  }
+}
+#longDisplay {
+  @media only screen and (max-width: 975px) {
+    display: none;
+  }
+}

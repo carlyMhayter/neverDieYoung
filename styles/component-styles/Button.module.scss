@@ -1,0 +1,22 @@
+.button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffbf60;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin: 10px 0px;
+  font-family: Crushed, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  border-radius: 0px;
+  padding: 3px 10px;
+  transition: 0.5s;
+  &:hover {
+    color: #e09200;
+    border-top: 2px solid rgb(94, 54, 22);
+    border-bottom: 2px solid rgb(94, 54, 22);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

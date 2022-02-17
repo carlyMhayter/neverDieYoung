@@ -1,11 +1,9 @@
-import '../style.css';
-import '../navBarStyling.css';
-import '../mobileStyling.css';
+import 'styles/style.scss';
+import 'styles/mobileStyling.scss';
 
 import NavBar from '../components/Navbar';
 import { PropTypes } from 'prop-types';
 
-// import App from 'next/app'
 function MyApp({ Component, pageProps }) {
   return (
     <>

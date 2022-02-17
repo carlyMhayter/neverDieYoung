@@ -1,0 +1,135 @@
+
+.tile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(34, 34, 34, 0.75);
+  border-radius: 10px;
+  border: #fff;
+  position: relative;
+}
+
+.tile:nth-child(n + 2) {
+  margin-top: 20px;
+}
+
+.img {
+  width: 60%;
+  flex: 0 0 auto;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: -5px 5px 20px 1px rgba(48, 34, 34, 0.5);
+  background-position: center;
+}
+
+.text {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  background: rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+  padding: 10px;
+  p {
+    padding: 4px 0px;
+  }
+  &:nth-child(odd) .text-tile {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+.textemp {
+  color: rgb(143, 116, 88);
+  font-size: 30px;
+  width: 95%;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 3px;
+}
+.textminor {
+  color: rgb(214, 195, 176);
+  font-size: 19px;
+  width: 90%;
+  letter-spacing: 0px;
+  margin: 3px;
+  padding-top: 10px;
+}
+
+.memberinfo {
+  color: rgb(182, 142, 83);
+  font-style: italic;
+  text-transform: lowercase;
+  font-size: 19px;
+}
+.scrollimg {
+  height: 40px;
+}
+
+@media only screen and (max-width: 975px) {
+  .text {
+    background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    z-index: 10;
+    min-height: 0;
+    justify-content: center;
+    margin-left: 0px;
+    border-top: 1px solid rgba(224, 146, 0, 1);
+    border-bottom: 1px solid rgba(224, 146, 0, 1);
+    border-left: 1px solid rgba(255, 191, 96, 1);
+    border-right: 1px solid rgba(255, 191, 96, 1);
+  }
+  .abouttext {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%);
+    width: auto;
+    color: blue
+  }
+
+  .inner {
+    margin-right: 0px;
+    margin: 5px;
+  }
+  .aboutcards {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.tile {
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    min-width: 1px;
+    padding: 5px;
+  }
+
+  .img {
+    width: 100%;
+    z-index: 0;
+    height: 300px;
+  }
+
+  
+  .textemp {
+    font-size: 20px;
+    text-shadow: 2px 2px 10px #000000;
+    color: rgb(195 169 141);
+  }
+  .textminor {
+    font-size: 18px;
+    text-shadow: 2px 2px 10px #000000;
+  }
+} 
+
+

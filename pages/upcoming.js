@@ -10,7 +10,7 @@ const upcomingDates = [
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
-    showDate: 'July 9 2022',
+    showDate: 'Date TBA',
     showTime: 'TBA',
     location: 'Connor Prairie / Fischers, Indiana',
     ticketLink: 'Ticket link coming soon',

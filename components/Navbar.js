@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { links } from 'utils/linksData';
-// import { MenuIcon } from '@material-ui/icons';
+import styles from '../styles/component-styles/NavBar.module.scss';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,18 +11,18 @@ const NavBar = () => {
   useEffect(() => {
     document.addEventListener('click', (event) => {
       const target1 = event.target.className;
-      if (isOpen && target1 !== 'dropdown-menu-button-img') {
+      if (isOpen && target1 !== styles.menuimg) {
         setIsOpen(false);
       }
     });
   }, [isOpen]);
 
   return (
-    <nav className="navbar">
-      <div className="link-container navbar-links">
-        <div id="longDisplay" className="text-links ">
+    <nav className={styles.navbar}>
+      <div className={`${styles.linkContainer} ${styles.navBarLinks}`}>
+        <div id="longDisplay" className={styles.textlinks}>
           {links.map((link) => (
-            <div className="navlink" key={link.linkName}>
+            <div className={styles.navlink} key={link.linkName}>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <Link href={link.linkLoc}>
                 <a> {link.linkName} </a>
@@ -30,12 +30,12 @@ const NavBar = () => {
             </div>
           ))}
         </div>
-        <div className="navlink img-link">
+        <div className={`${styles.navlink} ${styles.imglink}`}>
           <Link href="/">
             <a>
               <img
                 alt="Never Die Young Logo, with text and guitar"
-                className="logo-image"
+                className={styles.logoimage}
                 src="./never-die-young-logo-mini3.svg"
               />
             </a>
@@ -46,7 +46,7 @@ const NavBar = () => {
         <div className="dropdown">
           <button
             type="button"
-            id="dropdown-menu-button"
+            className={styles.dropdownBtn}
             onClick={() => {
               setIsOpen(!isOpen);
             }}
@@ -56,17 +56,18 @@ const NavBar = () => {
           >
             <img
               alt="dropdown menu button"
-              className="dropdown-menu-button-img"
+              className={styles.menuimg}
               src="/menu-bars.svg"
             />
-            {/* <MenuIcon fontSize="large" /> */}
           </button>
 
-          {/* show the dropdown menu options */}
           {isOpen && (
-            <div id="myDropdown" className="text-links dropdown-content">
+            <div
+              id="myDropdown"
+              className={`${styles.textlinks} ${styles.dropdowncontent}`}
+            >
               {links.map((link) => (
-                <div className="navlink" key={link.linkName}>
+                <div className={styles.navlink} key={link.linkName}>
                   <Link href={link.linkLoc}>
                     <a> {link.linkName} </a>
                   </Link>
