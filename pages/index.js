@@ -21,12 +21,12 @@ const Home = () => (
         />
       </div>
       <div className="content">
-        <a href="/upcoming" className="frontpage-ticket-link">
+        <a href="/upcoming" className={styles.ticketlink}>
           - GET TICKETS -
         </a>
         {/* Video Tile */}
         <div className="tile">
-          <div className="" id="video-container">
+          <div className={styles.video}>
             <ReactPlayer
               url="https://www.youtube.com/watch?v=VZ2oIhpo5Sg"
               width="100%"

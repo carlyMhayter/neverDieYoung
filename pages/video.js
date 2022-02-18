@@ -1,6 +1,7 @@
 import ReactPlayer from 'react-player/youtube';
 import React from 'react';
 import Head from 'next/head';
+import styles from '../styles/page-styles/video.module.scss';
 
 const Video = () => (
   <div className="page-content">
@@ -12,7 +13,7 @@ const Video = () => (
     <div className="page-title"> Video </div>
     <div className="content">
       <div className="tile">
-        <div className="" id="video-container">
+        <div className={styles.video}>
           <ReactPlayer
             url="https://www.youtube.com/watch?v=VZ2oIhpo5Sg"
             width="100%"

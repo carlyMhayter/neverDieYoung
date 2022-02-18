@@ -1,6 +1,7 @@
 import Head from 'next/head';
-
+import styles from '/styles/page-styles/testimonials.module.scss';
 import Carousel from '../components/Carousel';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const testimonials = [
   {
@@ -34,16 +35,15 @@ const Testimonials = () => (
     </Head>
     <div className="page-title">Testimonials</div>
     <div className="content">
-      <div className="tile testimonial-tile">
+      <div className={`tile ${styles.tile}`}>
         <Carousel>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="testimonial-container">
-              <div className="testing">
-                <div className="testimonial-person" id="unknown" />
+            <div key={testimonial.name} className={styles.container}>
+              <div className={styles.testing}><AccountCircleIcon className={styles.person} />
               </div>
-              <div className="text-tile-text-emp testimonial-text testimonial-text">
+              <div className={`${styles.textemp} ${styles.text} `}>
                 {testimonial.text}
-                <p className="text-tile-text-minor testimonial-text">
+                <p className={`${styles.textminor} ${styles.text} `}>
                   - {testimonial.name}
                 </p>
               </div>

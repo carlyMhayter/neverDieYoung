@@ -1,0 +1,17 @@
+.songtitles {
+  font-family: Crushed, serif;
+  color: rgb(214, 195, 176);
+  padding: 2px;
+  transition: 0.5s;
+  list-style-type: none;
+  &:hover {
+    color: #e09200;
+  }
+}
+
+.container {
+  border: 2px solid #e09200;
+  width: 400px;
+  padding: 30px 0px;
+  background-color: rgba(0, 0, 0, 0.55);
+}

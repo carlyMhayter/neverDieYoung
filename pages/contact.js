@@ -1,6 +1,7 @@
 import FormContact from '../components/FormContact';
 import Head from 'next/head';
 
+
 const Contact = () => (
   <div className="page-content">
     <Head>

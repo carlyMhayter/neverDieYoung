@@ -12,9 +12,7 @@
     padding-top: 5px;
     width: 60px;
   }
-  .cover-logo {
-    max-width: 375px;
-  }
+
   .left-links {
     left: calc(50% - 165px);
     flex-direction: column;
@@ -125,12 +123,7 @@
   // }
 
   /* Form --------------------------------------- */
-  .form-contact {
-    max-width: 350px;
-    display: block;
-    flex-direction: none;
-    justify-content: none;
-  }
+
   .testing {
     max-width: 350px;
     padding: 0px 0px 10px 0px;
@@ -208,10 +201,6 @@
     display: none;
   }
 
-  .scroll-img {
-    margin: 5px 0px 0px 0px;
-    height: 20px;
-  }
   .frontpage-ticket-link {
     width: 350px;
   }

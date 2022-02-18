@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import styles from '/styles/page-styles/songlist.module.scss';
 
 const songTitles = [
   'Never Die Young',
@@ -39,9 +40,9 @@ const Songlist = () => (
     </Head>
     <div className="page-title"> Song List </div>
     <div className="content">
-      <ul className="songtitles-container">
+      <ul className={styles.container}>
         {songTitles.map((title) => (
-          <li className="songtitles" key={title}>
+          <li className={styles.songtitles} key={title}>
             {title}
           </li>
         ))}

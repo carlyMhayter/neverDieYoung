@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 350px;
+
+}
+
+.person {
+color: rgb(195 169 141);
+font-size: 50px}
+
+.text {
+  width: 350px;
+  font-size: 18px;
+    @media only screen and (max-width: 975px) {
+      
+  }
+}
+
+.testing {
+  display: flex;
+  justify-content: center;
+    @media only screen and (max-width: 975px) {
+          max-width: 350px;
+    padding: 0px 0px 10px 0px;
+  }
+}
+
+
+.tile {
+  max-width: 550px;
+  min-width: 550px;
+    @media only screen and (max-width: 975px) {
+    min-width: 350px;
+    max-width: 350px;
+  }
+}
+
+.textemp {
+  color: rgb(143, 116, 88);
+  font-size: 18px;
+  width: 95%;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 3px;
+      @media only screen and (max-width: 975px) {
+              font-size: 18px;
+    text-shadow: 2px 2px 10px #000000;
+      }
+}
+.textminor {
+  color: rgb(214, 195, 176);
+  font-size: 18px;
+  width: 90%;
+  letter-spacing: 0px;
+  margin: 3px;
+  padding-top: 10px;
+      @media only screen and (max-width: 975px) {
+              font-size: 16px;
+    text-shadow: 2px 2px 10px #000000;
+      }
+}

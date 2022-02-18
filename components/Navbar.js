@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { links } from 'utils/linksData';
 import styles from '../styles/component-styles/NavBar.module.scss';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,11 +55,7 @@ const NavBar = () => {
               setIsOpen(!isOpen);
             }}
           >
-            <img
-              alt="dropdown menu button"
-              className={styles.menuimg}
-              src="/menu-bars.svg"
-            />
+            <MenuIcon className={styles.menuimg}/>
           </button>
 
           {isOpen && (

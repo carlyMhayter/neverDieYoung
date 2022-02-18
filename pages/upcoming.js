@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import styles from '/styles/page-styles/upcoming.module.scss';
 
 const upcomingDates = [
   {
@@ -82,24 +83,21 @@ const UpcomingShows = () => (
     </Head>
     <div className="page-title"> Upcoming Shows </div>
     <div className="content">
-      <div className="upcoming-container">
+      <div className={styles.container}>
         {upcomingDates.map((upcomingDate) => (
-          <div className="upcoming-item" key={upcomingDate}>
+          <div className={styles.item} key={upcomingDate}>
             {/* <div className="showtitle upcoming-item-info">
               {upcomingDate.showTitle}
             </div> */}
-            <div className="upcoming-item-info showtitle">
+            <div className={`${styles.title} ${styles.info}`}>
               {upcomingDate.showDate}
             </div>
-            <div className="upcoming-item-info">
-              {' '}
-              {upcomingDate.ticketLink}{' '}
-            </div>
-            <div className="upcoming-item-info"> {upcomingDate.location} </div>
+            <div className={styles.info}> {upcomingDate.ticketLink} </div>
+            <div className={styles.info}> {upcomingDate.location} </div>
             {/* <a
               href={upcomingDate.ticketLink}
               target="_blank"
-              className="ticket-button"
+              className={styles.button}
             >
               Tickets
             </a> */}

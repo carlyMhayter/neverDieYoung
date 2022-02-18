@@ -5,13 +5,16 @@
   padding: 10px 0px;
   display: flex;
   justify-content: center;
+    @media only screen and (max-width: 975px) {
+          padding-bottom: 5px;
+
+    }
 }
 .navBarLinks {
   font-family: Crushed, serif;
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: red;
 }
 .navlink {
   font-size: 22px;
@@ -27,6 +30,7 @@
     width: 350px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0px;
   }
 
   a {
@@ -37,6 +41,9 @@
     text-align: center;
     border-top: 2px solid rgb(0, 0, 0);
     border-bottom: 2px solid rgb(0, 0, 0);
+    &:hover {
+      color: #d38f10;
+    }
   }
 }
 
@@ -74,9 +81,8 @@
   display: none;
   @media only screen and (max-width: 975px) {
     display: block;
-    background-color: black;
+    background-color: transparent;
     border: none;
-    border-color: black;
   }
 }
 
@@ -100,15 +106,14 @@
   z-index: 10;
 }
 .menuimg {
-  height: 30px;
-  width: 70px;
   transition: 0.5s;
-  filter: brightness(75%);
+  color: #FFC543;
+  font-size: 50px;
 
-  &hover {
+  &:hover {
     cursor: pointer;
     text-shadow: 2px 2px 10px #cfa351;
-    filter: brightness(125%);
+    color: #d38f10;
   }
 }
 #longDisplay {
