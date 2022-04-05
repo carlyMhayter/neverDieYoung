@@ -12,8 +12,16 @@ const NavBar = () => {
   useEffect(() => {
     document.addEventListener('click', (event) => {
       const target1 = event.target.className;
-      if (isOpen && target1 !== styles.menuimg) {
+      const classname = styles.menuimg;
+
+      if (isOpen && target1 !== classname) {
+        console.log("event.target.className", event.target.className);
+        console.log("isOpen", isOpen);
         setIsOpen(false);
+        console.log("isOpen", isOpen);
+        console.log("styles.menuimg",styles.menuimg)
+
+
       }
     });
   }, [isOpen]);
@@ -21,7 +29,7 @@ const NavBar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={`${styles.linkContainer} ${styles.navBarLinks}`}>
-        <div id="longDisplay" className={styles.textlinks}>
+        <div className={`${styles.textlinks} ${styles.longDisplay}`}>
           {links.map((link) => (
             <div className={styles.navlink} key={link.linkName}>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -49,7 +57,10 @@ const NavBar = () => {
             type="button"
             className={styles.dropdownBtn}
             onClick={() => {
+              console.log("on click, isOpen:", isOpen)
               setIsOpen(!isOpen);
+              console.log("after click, isOpen:", isOpen)
+
             }}
             onKeyDown={() => {
               setIsOpen(!isOpen);

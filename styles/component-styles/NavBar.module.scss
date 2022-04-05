@@ -116,7 +116,8 @@
     color: #d38f10;
   }
 }
-#longDisplay {
+
+.longDisplay {
   @media only screen and (max-width: 975px) {
     display: none;
   }

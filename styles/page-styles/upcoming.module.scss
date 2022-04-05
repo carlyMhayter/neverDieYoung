@@ -1,6 +1,6 @@
 .container {
   border: 2px solid #e09200;
-  width: 350px;
+  min-width: 350px;
   height: auto;
   flex-direction: column;
   padding: 30px 0px;
@@ -11,13 +11,14 @@
 }
 
 .item {
-  font-family: Crushed, serif;
+  font-family: Playfair Display, serif;
   color: rgb(214, 195, 176);
   padding: 2px;
   font-size: 20px;
   border-bottom: 2px solid rgba(94, 54, 22, 0.5);
   width: 300px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .title {
@@ -27,12 +28,25 @@
 
 .info {
   padding: 2px 0px;
+  line-height: 1.6;
 }
 
+.special {
+  margin: 16px 0px;
+}
+.tba {
+  color: rgb(255, 251, 211);
+  margin: 16px 0px;
+}
 .button {
-  background-color: rgba(126, 93, 69, 0.9);
+  font-family: Crushed, serif;
+  display: inline-block;
+  background-color: #e09200;
   border-radius: 5px;
-  color: #e09200;
-  font-size: 30px;
+  padding: 4px 16px;
+  margin: 24px;
+  color: black;
+  font-size: 20px;
   margin: 0px 10px;
+  text-decoration: none;
 }

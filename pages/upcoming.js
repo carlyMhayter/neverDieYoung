@@ -7,70 +7,70 @@ const upcomingDates = [
     showDate: 'April 23 2022',
     showTime: 'Time is TBA',
     location: 'Arizona Charlies/Decatur, Las Vegas',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
-    showDate: 'Date TBA',
+    showDate: 'July 9th',
     showTime: 'TBA',
     location: 'Connor Prairie / Fischers, Indiana',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'special',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 7 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 14 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 21 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 28 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 5 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 12 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 19 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 26 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'Ticket link coming soon',
+    ticketLink: 'TBA',
   },
 ];
 
@@ -92,15 +92,34 @@ const UpcomingShows = () => (
             <div className={`${styles.title} ${styles.info}`}>
               {upcomingDate.showDate}
             </div>
-            <div className={styles.info}> {upcomingDate.ticketLink} </div>
             <div className={styles.info}> {upcomingDate.location} </div>
-            {/* <a
-              href={upcomingDate.ticketLink}
-              target="_blank"
-              className={styles.button}
-            >
-              Tickets
-            </a> */}
+            {upcomingDate.ticketLink === 'TBA' && (
+              <div className={styles.tba}> Tickets Available Soon </div>
+            )}
+            {upcomingDate.ticketLink === 'special' && (
+              <>
+                <div className={styles.special}>
+                  Pre-Sale Tickets <p>(April 6th 10:00 EST - April 11th)</p>
+                </div>
+                <a
+                  href="https://tickets.indianapolissymphony.org/events?view=list&kid=50&promo=NDY0239856"
+                  target="_blank"
+                  className={styles.button}
+                >
+                  Get Tickets
+                </a>
+                <div className={styles.special}>
+                  On-Sale Tickets <p>(Starting April 12th, 10:00 EST)</p>
+                </div>
+                <a
+                  href="https://tickets.indianapolissymphony.org/events?view=list&kid=50&promo=NDY0239856"
+                  target="_blank"
+                  className={styles.button}
+                >
+                  Get Tickets
+                </a>
+              </>
+            )}
           </div>
         ))}
       </div>

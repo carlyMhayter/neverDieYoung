@@ -96,3 +96,22 @@ body {
   background: #f3aaaa;
   min-height: 20px;
 }
+
+@media only screen and (max-width: 975px) {
+    html {
+    min-width: 400px;
+        background-image: none;
+
+  }
+  .content {
+    width: 400px;
+    max-width: 401px;
+  }
+    .tile {
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    min-width: 1px;
+    padding: 5px;
+  }
+}
