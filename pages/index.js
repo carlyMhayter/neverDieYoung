@@ -16,7 +16,7 @@ const Home = () => (
       <div className={styles.cover}>
         <img
           className={styles.coverlogo}
-          src="/never-die-young-logo-lessOrnate2.svg"
+          src="/never-die-young-logo-lessOrnate3.svg"
           alt="never die young text logo"
         />
       </div>
