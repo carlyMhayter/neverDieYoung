@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'components/Button';
 import { useRouter } from 'next/router';
-import styles from "styles/component-styles/Card.module.scss";
+import styles from 'styles/component-styles/Card.module.scss';
 
 export default function Card(props) {
   const {
@@ -9,7 +9,7 @@ export default function Card(props) {
     empText,
     minEmpText,
     minorText,
-    buttonLinkName,
+    buttonLinkname,
     buttonText,
     imgId,
     imgAlt,
@@ -18,12 +18,13 @@ export default function Card(props) {
 
   const router = useRouter();
 
+  console.log(`card: ${buttonLinkname}`);
   return (
     <div className={`${styles.tile} ${orientation} ${styles.aboutcards}`}>
       {orientation === 'left' && (
         <div id={imgId} className={`${styles.img} ${styles.inner}`} />
       )}
-      <div className={`${styles.text} ${styles.inner} ${styles.abouttext}`} >
+      <div className={`${styles.text} ${styles.inner} ${styles.abouttext}`}>
         <p className={styles.textemp}>{empText}</p>
         {minEmpText && <p className={styles.memberinfo}>{minEmpText}</p>}
         {scroll && (
@@ -36,7 +37,7 @@ export default function Card(props) {
         )}
         <p className={styles.textminor}>{minorText}</p>
         {buttonText.length > 0 && (
-          <Button onClick={() => router.push({ buttonLinkName })}>
+          <Button onClick={() => router.push(`${buttonLinkname}`)}>
             - {buttonText}-
           </Button>
         )}

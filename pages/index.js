@@ -34,6 +34,9 @@ const Home = () => (
             />
           </div>
         </div>
+        {Object.keys(homeCardsInfo).map((card) =>
+          console.log(`index: ${homeCardsInfo[card].buttonLinkname}`),
+        )}
         {Object.keys(homeCardsInfo).map((card) => (
           <Card
             key={card}
