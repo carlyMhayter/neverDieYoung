@@ -1,7 +1,7 @@
 export const homeCardsInfo = {
   card1: {
     orientation: 'left',
-    empText: 'The premier James Taylor tribute band in Southern California.',
+    empText: 'Honoring an icon.',
     minEmpText: '',
     minorText: '',
     buttonLinkname: '/video',
@@ -12,7 +12,7 @@ export const homeCardsInfo = {
   },
   card2: {
     orientation: 'right',
-    empText: 'Professional music by professional musicians. Cali grown.',
+    empText: 'Meet the band',
     minEmpText: '',
     minorText:
       'Learn more about the group of lifetime musicians behind Never Die Young:',
