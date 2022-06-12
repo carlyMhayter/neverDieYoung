@@ -5,7 +5,7 @@ export const homeCardsInfo = {
     minEmpText: '',
     minorText: '',
     buttonLinkname: '/video',
-    buttonText: 'listen',
+    buttonText: 'video',
     imgId: 'dave_tim2',
     imgAlt: 'two men play the guitar on stage',
     scroll: false,
@@ -24,10 +24,9 @@ export const homeCardsInfo = {
   },
   card3: {
     orientation: 'left',
-    empText: 'Perfect for your event, both business and personal.',
+    empText: 'Hear what satisfied clients have to say about Never Die Young:',
     minEmpText: '',
-    minorText:
-      'Hear what satisfied clients have to say about Never Die Young: ',
+    minorText: '',
     buttonLinkname: '/testimonials',
     buttonText: 'testimonials',
     imgId: 'group1',

@@ -1,14 +1,7 @@
 import Head from 'next/head';
-import styles from '/styles/page-styles/upcoming.module.scss';
+import styles from '../styles/page-styles/upcoming.module.scss';
 
 const upcomingDates = [
-  {
-    showTitle: 'Walking Man Tribute: A Salute to James Taylor',
-    showDate: 'April 23 2022',
-    showTime: 'Time is TBA',
-    location: 'Arizona Charlies/Decatur, Las Vegas',
-    ticketLink: 'TBA',
-  },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'July 9th',

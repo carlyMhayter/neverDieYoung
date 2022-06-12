@@ -20,7 +20,7 @@ export const links = [
     linkName: 'Contact',
     linkLoc: '/contact',
   },
-  { linkName: 'Upcoming Shows', linkLoc: '/upcoming' },
+  { linkName: 'Shows', linkLoc: '/upcoming' },
 ];
 
 export default { links };

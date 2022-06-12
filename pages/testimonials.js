@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '/styles/page-styles/testimonials.module.scss';
+import styles from '../styles/page-styles/testimonials.module.scss';
 import Carousel from '../components/Carousel';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
@@ -39,7 +39,8 @@ const Testimonials = () => (
         <Carousel>
           {testimonials.map((testimonial) => (
             <div key={testimonial.name} className={styles.container}>
-              <div className={styles.testing}><AccountCircleIcon className={styles.person} />
+              <div className={styles.testing}>
+                <AccountCircleIcon className={styles.person} />
               </div>
               <div className={`${styles.textemp} ${styles.text} `}>
                 {testimonial.text}
