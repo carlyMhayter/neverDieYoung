@@ -28,7 +28,7 @@ const Home = () => (
         <div className="tile">
           <div className={styles.video}>
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=VZ2oIhpo5Sg"
+              url="https://www.youtube.com/watch?v=N9sibbBex3s"
               width="100%"
               height="100%"
             />
