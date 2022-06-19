@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'components/Button';
 import { useRouter } from 'next/router';
-import styles from 'styles/component-styles/Card.module.scss';
+import styles from '../styles/component-styles/Card.module.scss';
 
 export default function Card(props) {
   const {

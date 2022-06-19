@@ -39,8 +39,11 @@
 .video {
   height: 450px;
   width: 800px;
+  background-image: url('../../public/NDY\ Group\ photo.png');
+  background-position: center;
+  background-size: cover;
   @media only screen and (max-width: 975px) {
     height: 225px;
     width: 350px;
-}
+  }
 }

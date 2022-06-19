@@ -1,5 +1,4 @@
 import Card from 'components/Card';
-import ReactPlayer from 'react-player/youtube';
 import React from 'react';
 import Head from 'next/head';
 import { homeCardsInfo } from '../utils/cardsData';
@@ -24,16 +23,6 @@ const Home = () => (
         <a href="/upcoming" className={styles.ticketlink}>
           - GET TICKETS -
         </a>
-        {/* Video Tile */}
-        <div className="tile">
-          <div className={styles.video}>
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=N9sibbBex3s"
-              width="100%"
-              height="100%"
-            />
-          </div>
-        </div>
         {Object.keys(homeCardsInfo).map((card) =>
           console.log(`index: ${homeCardsInfo[card].buttonLinkname}`),
         )}
