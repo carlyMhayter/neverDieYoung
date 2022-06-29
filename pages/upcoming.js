@@ -7,63 +7,64 @@ const upcomingDates = [
     showDate: 'July 9th',
     showTime: 'TBA',
     location: 'Connor Prairie / Fischers, Indiana',
-    ticketLink: 'special',
+    ticketLink:
+      'https://tickets.indianapolissymphony.org/events?view=list&kid=50&promo=NDY0239856',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 7 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 14 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 21 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'September 28 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 5 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 12 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 19 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
   {
     showTitle: 'Walking Man Tribute: A Salute to James Taylor',
     showDate: 'October 26 2022',
     showTime: 'TBA',
     location: 'Welk Resort Theatre Escondido, CA',
-    ticketLink: 'TBA',
+    ticketLink: 'https://tickets.thewelksandiego.com/',
   },
 ];
 
@@ -79,9 +80,6 @@ const UpcomingShows = () => (
       <div className={styles.container}>
         {upcomingDates.map((upcomingDate) => (
           <div className={styles.item} key={upcomingDate}>
-            {/* <div className="showtitle upcoming-item-info">
-              {upcomingDate.showTitle}
-            </div> */}
             <div className={`${styles.title} ${styles.info}`}>
               {upcomingDate.showDate}
             </div>
@@ -89,29 +87,16 @@ const UpcomingShows = () => (
             {upcomingDate.ticketLink === 'TBA' && (
               <div className={styles.tba}> Tickets Available Soon </div>
             )}
-            {upcomingDate.ticketLink === 'special' && (
-              <>
-                <div className={styles.special}>
-                  Pre-Sale Tickets <p>(April 6th 10:00 EST - April 11th)</p>
-                </div>
-                <a
-                  href="https://tickets.indianapolissymphony.org/events?view=list&kid=50&promo=NDY0239856"
-                  target="_blank"
-                  className={styles.button}
-                >
-                  Get Tickets
-                </a>
-                <div className={styles.special}>
-                  On-Sale Tickets <p>(Starting April 12th, 10:00 EST)</p>
-                </div>
-                <a
-                  href="https://tickets.indianapolissymphony.org/events?view=list&kid=50&promo=NDY0239856"
-                  target="_blank"
-                  className={styles.button}
-                >
-                  Get Tickets
-                </a>
-              </>
+            {['special', 'TBA'].every(
+              (x) => !upcomingDate.ticketLink.includes(x),
+            ) && (
+              <a
+                href={upcomingDate.ticketLink}
+                target="_blank"
+                className={styles.button}
+              >
+                Get Tickets
+              </a>
             )}
           </div>
         ))}
